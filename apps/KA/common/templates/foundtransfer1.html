@@ -1,0 +1,35 @@
+<ion-view title="Ticket booking"> <ion-content
+	padding="'true'" class="has-header" >
+	
+<div class="list" >
+
+<div class="item item-divider">
+    <h1>Summary</h1>
+  </div>
+  <div ng-repeat="data in datas">
+  <a class="item" >
+    {{data.key}}
+    <span class="item-note">
+      {{data.values}}
+    </span>
+  </a>
+</div>
+<a class="item" >
+    Total debit ammount
+    <span class="item-note">
+      105.5 OMR
+    </span>  
+  </a>
+  
+  <p class="button">Conform</p>
+</div>
+
+	<!-- <a class="item item-icon-left" href="#">
+    <i class="icon ion-mic-a"></i>
+    Record album
+    <span class="item-note">
+      Grammy
+    </span>
+  </a> -->
+
+	</ion-content></ion-view>
