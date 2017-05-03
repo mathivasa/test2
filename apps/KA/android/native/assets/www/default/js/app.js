@@ -51,7 +51,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'LoginCtrl'
       }
     }
-  })
+  }).state('tab.listview', {
+	    url: '/listview',
+	    views: {
+	      'main': {
+	        templateUrl: 'templates/listview.html',
+	        controller: 'listViewCtrl'
+	      }
+	    }
+	  })
   .state('tab.dashboard', {
     url: '/dashboard',
     views: {
@@ -60,12 +68,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'DashboardCtrl'
       }
     }
-  }).state('tab.foundtransfer', {
-	    url: '/foundtransfer',
+  }).state('tab.foundtransfer1', {
+	    url: '/foundtransfer1',
 	    views: {
 	      'main': {
-	        templateUrl: 'templates/foundtransfer.html',
-	        controller: 'foundtransferCtrl'
+	        templateUrl: 'templates/foundtransfer1.html',
+	        controller: 'foundtransferCtrl1'
 	      }
 	    }
 	  });;

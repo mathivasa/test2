@@ -13,4 +13,10 @@ function wlCommonInit(){
 	
 	// Common initialization code goes here
 	
+	
+ // google.maps.event.addDomListener(window, 'load', initmaps());
+
+	
+	
+	
 }

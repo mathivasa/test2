@@ -1,23 +1,25 @@
-html,body{
+html, body {
 	height: 100%;
 	width: 100%;
 }
 
-#TBorder{
-	
-    width: 50px;
-    height: 50px;
-    background: black;
-    border: red 1px solid;
-    padding: 100px 25px;
-    color: white;
-    text-align: center;
-    border-radius: 40px;
-
+#TBorder {
+	width: 50px;
+	height: 50px;
+	background: black;
+	border: red 1px solid;
+	padding: 100px 25px;
+	color: white;
+	text-align: center;
+	border-radius: 40px;
 }
-
-
-
+.item-profile {
+  height: 150px;
+  .item-avatar > img:first-child {
+    max-width: 100px;
+    max-height: 100px:
+  }
+}
 /* body {
   cursor: url('http://ionicframework.com/img/finger.png'), auto;
 } */
@@ -26,15 +28,31 @@ html,body{
  * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
  */
 .list .item.item-accordion {
-  line-height: 38px;
-  padding-top: 0;
-  padding-bottom: 0;
-  transition: 0.09s all linear;
+	line-height: 38px;
+	padding-top: 0;
+	padding-bottom: 0;
+	transition: 0.09s all linear;
 }
+
 .list .item.item-accordion.ng-hide {
-  line-height: 0px;
+	line-height: 0px;
 }
-.list .item.item-accordion.ng-hide-add,
-.list .item.item-accordion.ng-hide-remove {
-  display: block !important;
+
+.list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove
+	{
+	display: block !important;
+}
+
+.backdiv {
+	border-radius: 12px;
+	padding: 10px;
+	/* padding-right: 36px; */
+	margin: 0 auto !important;
+	width: 93%;
+}
+
+.frontdiv {
+	border-radius: 12px;
+	margin-top: -20px !important;
+	box-shadow: 1px 1px 1px 1px #888888;
 }

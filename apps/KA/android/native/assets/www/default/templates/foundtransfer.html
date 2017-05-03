@@ -1,6 +1,41 @@
-<ion-view title="found transfer"> 
-<ion-content padding="'true'" class="has-header">  
+<ion-view title="found transfer"> <ion-header-bar
+	class="bar-positive">
+<h1 class="title">Accordion List</h1>
+</ion-header-bar> <ion-content> <ion-list>
+
+<div class="list card">
+	<div>
+		<ion-item ng-click="toggleGroup()" class="item item-icon-left">
+		<i class="icon"
+			ng-class="isGroupShown(group) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
+
+		<p>Transaction Purpose</p>
+		<font>Personal Support</font> </ion-item>
+		<ion-item class="item-accordion" ng-show="isGroupShown(group)">
+		<div class="list">
+
+			<div class="item">Candy Bars</div>
+
+			<a class="item"> Butterfinger </a>
+		</div>
+
+		</ion-item>
+	</div>
+
+</div>
 
 
-</ion-content>
- </ion-view>
+<div class="list card">
+
+	<a href="#" class="item item-icon-left" ng-click="toggleGroup(1)">
+		<i class="icon ion-ios-arrow-down"></i>
+		<p>Transaction Purpose</p> <font>Personal Support</font>
+	</a> <a href="#" class="item item-icon-left"> <i
+		class="icon ion-ios-arrow-down"></i>
+		<p>Transaction Purpose</p> <font>Personal Support</font>
+	</a>
+
+
+</div>
+
+</ion-list> </ion-content> </ion-view>

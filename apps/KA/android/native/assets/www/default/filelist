@@ -74,6 +74,8 @@
 /lib/ionic/version.json
 /templates/dashboard.html
 /templates/foundtransfer.html
+/templates/foundtransfer1.html
+/templates/listview.html
 /templates/login.html
 /templates/tabs.html
 /worklight/cordova.js

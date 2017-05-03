@@ -1,7 +1,7 @@
 
-<ion-view title="Login">
+<ion-view title="Main">
     <ion-content padding="'true'" class="has-header">
-        <form class="list" >
+        <form class="list" style="display: none;">
             <ion-list>
                 <label class="item item-input" style="margin-top: 50%;">
                     <span class="input-label">Email</span>
@@ -13,8 +13,13 @@
                 </label>
             </ion-list>
             <div class="spacer" style="height: 40px;"></div>
-            <button  class="button button-balanced button-block" ng-click="login()" >Log in</button>
-			
+            <button  class="button button-balanced button-block" ng-click="login()" >Log in</button>	
         </form>
+        
+        <p ng-click="page1()" class="button button-positive button-block">page1</p>
+        <p ng-click="page2()" class="button button-positive button-block">page2</p>
+        <p ng-click="page3()" class="button button-positive button-block">page3</p>
+        <p ng-click="page4()" class="button button-positive button-block">page4</p>
+        
     </ion-content>
 </ion-view>
